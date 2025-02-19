@@ -12,9 +12,6 @@ jobs:
     - name: Install project dependencies
       run: npm install
 
-    - name: Build Compute Package
-      uses: fastly/compute-actions/build@v11
-
     - name: Deploy to Compute
       uses: fastly/compute-actions@v11
       with:
