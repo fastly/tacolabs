@@ -12,8 +12,8 @@
         "@fastly/js-compute": "^3.31.0"
       },
       "devDependencies": {
-        "webpack": "^5.75.0",
-        "webpack-cli": "^5.0.1"
+        "webpack": "^5.89.0",
+        "webpack-cli": "^5.1.4"
       },
       "engines": {
         "node": ">=18.0.0"
