@@ -596,7 +596,7 @@
     },
     "node_modules/@fastly/js-compute": {
       "version": "3.31.0",
-      "resolved": "https://npm.pkg.github.com/download/@fastly/js-compute/3.31.0/f21e2e740a4c18ee0cf40875a0bd17878c43e66a",
+      "resolved": "https://registry.npmjs.org/@fastly/js-compute/-/js-compute-3.31.0.tgz",
       "integrity": "sha512-r7kEXIGTchk0eEW9o6q59GjYSVKfrFPHKRxRDMHU2jJxP+B0yi0Ejdj5V/efE6IAAZWfF+lmij4bYCptkGaIWQ==",
       "dependencies": {
         "@bytecodealliance/jco": "^1.7.0",
