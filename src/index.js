@@ -61,13 +61,16 @@ const handler = async (event) => {
 
   // If status is not 404, send the backend response to the client
   if (backendResponse.status != 404) {
-    // Don't modify backendResponse directly - clone it first
-    const responseClone = new Response(backendResponse.body, {
+    // Create a new headers object to avoid modifying the original
+    const newHeaders = new Headers(backendResponse.headers);
+    // Use ASCII characters instead of emoji
+    newHeaders.set("x-tacos", "tacos");
+    
+    // Create new response with the modified headers
+    return new Response(backendResponse.body, {
       status: backendResponse.status,
-      headers: backendResponse.headers,
+      headers: newHeaders
     });
-    responseClone.headers.append("x-tacos", "🌮🌮🌮");
-    return responseClone;
   }
   
   // Default return if we somehow get here
