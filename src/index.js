@@ -35,13 +35,6 @@ const handler = async (event) => {
     });
   }
 
-  if (dest) {
-    return new Response("", {
-      status: 301,
-      headers: { Location: dest },
-    });
-  }
-
   const backendResponse = await fetch(req, {
     backend: "vcl-origin",
     cacheOverride: new CacheOverride("pass")
