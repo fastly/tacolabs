@@ -54,7 +54,7 @@ const handler = async (event) => {
   if (backendResponse.status != 404) {
     // Create a new headers object to avoid modifying the original
     const newHeaders = new Headers(backendResponse.headers);
-    newHeaders.set("x-tacos", "I love tacos!");
+    newHeaders.set("x-tacos", "We love tacos!");
     
     // Create new response with the modified headers
     return new Response(backendResponse.body, {
