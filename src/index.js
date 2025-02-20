@@ -63,8 +63,7 @@ const handler = async (event) => {
   if (backendResponse.status != 404) {
     // Create a new headers object to avoid modifying the original
     const newHeaders = new Headers(backendResponse.headers);
-    // Use ASCII characters instead of emoji
-    newHeaders.set("x-tacos", "tacos");
+    newHeaders.set("x-tacos", encodeURIComponent("🌮🌮🌮"));
     
     // Create new response with the modified headers
     return new Response(backendResponse.body, {
