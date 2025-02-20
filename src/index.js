@@ -27,11 +27,11 @@ const handler = async (event) => {
   if (destBytes) {
     // Convert the byte string to a JavaScript string
     const textDecoder = new TextDecoder();
-    const destUrl = textDecoder.decode(destBytes);
+    const dest = textDecoder.decode(destBytes);
     
     return new Response("", {
       status: 301,
-      headers: { Location: destUrl },
+      headers: { Location: dest },
     });
   }
 
