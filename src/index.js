@@ -10,7 +10,7 @@ const handler = async (event) => {
   });
  
   // Add headers to the response back to the client
-  backendResponse.headers.append("x-tacos", "🌮🌮🌮")
+  backendResponse.headers.append("x-tacos", "We love tacos!")
  
   // send the backend response to the client
   return backendResponse;
