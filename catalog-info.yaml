@@ -1,0 +1,14 @@
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    github.com/project-slug: fastly/tacolabs
+  description: This is the example static website for the Fastly documentation tutorials.
+  name: tacolabs
+  title: fastly/tacolabs
+spec:
+  lifecycle: source
+  owner: group:web-engineering
+  type: repository
